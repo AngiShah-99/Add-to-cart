@@ -1,0 +1,241 @@
+body {
+    font-family: 'Inter-Regular';
+    color: var(--black);
+}
+
+/* select starts*/
+.custom-select {
+    height: 26px;
+    width: 65px;
+    border: 0.9px solid var(--light-grey);
+    border-radius: 3px;
+    font-size: 10.85px;
+    padding-left: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* custom down arrow */
+    background-color: white;
+    background-image: url('./img/downArrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+    outline: none;
+    /* Custom down arrow ends */
+}
+
+.custom-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* radio button starts*/
+input[type="radio"].radio-button {
+    display: none;
+}
+
+.item .visible-content:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    position: absolute;
+    left: 6.6px;
+    top: 46.5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+.visible-content:before {
+    border-color: var(--green);
+    box-sizing: border-box;
+}
+
+input[type="radio"]:checked+.visible-content:after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--green);
+    position: absolute;
+    left: 10.6px;
+    top: 7.2px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label+.details {
+    display: block;
+}
+
+/* radio button ends */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading-save {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.title-save {
+    margin: 0 16px;
+    font-size: 18.08px;
+}
+
+.item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.horizontalLine {
+    width: 94px;
+}
+
+.item {
+
+    width: 310px;
+    margin-bottom: 10px;
+    padding: 20px 5px 20px 24px;
+    border: var(--whitish-grey) 1px solid;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.item.active {
+    background-color: var(--light-green);
+    border: 1px solid var(--green);
+}
+
+.visible-content {
+    padding-right: 6px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content-one {
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px;
+}
+
+.visible-content div:not(:first-child) {
+    padding-left: 20px;
+}
+
+.middle-tag .strikethrough {
+    font-size: 9.94px;
+    text-decoration: line-through;
+}
+
+.content-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-edit th {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.product-details td {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.product-details td:first-child {
+    font-size: 9.04px;
+}
+
+.product-label {
+    font-size: 14.46px;
+}
+
+.product-label-weight {
+    font-size: 14.46px;
+}
+
+.discount-tag {
+    font-size: 12.65px;
+}
+
+.details {
+    display: none;
+}
+
+.details.active {
+    display: flex;
+}
+
+.product-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-edit th {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.popular-tag {
+    font-size: 12.65px;
+}
+
+.final-details {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 0px;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.copyright-details {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.copyright-mark {
+    font-size: 7.33px;
+}
+
+.powered-details {
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+.active {
+    display: block;
+}
