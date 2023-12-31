@@ -1,0 +1,52 @@
+/* Declare variables */
+:root {
+    --black: #000000;
+    --green: #007F61;
+    --light-green: #F4FBF9;
+    --dark-grey: #9F9F9F;
+    --light-grey: #D9D9D9;
+    --whitish-grey: #C8C8C8;
+    --grey: #DADADA;
+}
+
+/* color */
+.black {
+    color: #000000;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.light-grey {
+    color: #D9D9D9;
+}
+
+.darkGrey {
+    color: #9F9F9F;
+}
+
+.mainGreen {
+    color: #007F61;
+}
+
+/* font family */
+.interLight {
+    font-family: 'Inter-Light';
+}
+
+.interMedium {
+    font-family: 'Inter-Medium';
+}
+
+.interRegular {
+    font-family: 'Inter-Regular';
+}
+
+.interBold {
+    font-family: 'Inter-Bold';
+}
+
+.interSemiBold {
+    font-family: 'Inter-SemiBold';
+}
